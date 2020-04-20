@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=iso-8859-2">
+        <meta name="Description" content=" [wstaw tu opis strony] ">
+        <meta name="Keywords" content=" [wstaw tu slowa kluczowe] ">
+        <meta name="Kamil Giżyński" content=" [dane autora] ">
+        <meta charset="UTF-8">
+        <script type="text/javascript">
+            function zmianaKoloru() {
+                if (document.body.style.backgroundColor === "red")
+                {
+                    document.body.style.backgroundColor = "green"
+                    return;
+                }
+                if (document.body.style.backgroundColor === "blue")
+                {
+                    document.body.style.backgroundColor = "red"
+                    return;
+                }
+                document.body.style.backgroundColor = "blue"
+            }
+        </script>
+    </head>
+
+    <body bgcolor="red">
+        <button onclick="zmianaKoloru()">Zmień Kolor</button>
+        <h5 style="font-family:'Times New Roman',serif; color: #000000; font-size:xx-large; text-align:center">Warsztaty Fotograficzne</h5>
+        <hr>
+        <form method="post" name="rejestracja_zlot">
+            <label for="imie">Imie:</label><br>
+            <input type="text" id="imie" name="imie">
+            <br><br>
+
+            <label for="nazwisko">Nazwisko:</label><br>
+            <input type="text" id="nazwisko" name="nazwisko">
+            <br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email">
+            <br><br>
+
+            <label for="numerTelefonu">Numer Telefonu Kontaktowego:</label><br>
+            <input type="number" id="numerTelefonu" name="numerTelefonu">
+            <br><br>
+
+            <label for="dostępność">Ile razy w tygodniu możesz być na warsztatach?</label><br>
+            <input type="number" id="dostępność" name="dostępność">
+            <br><br>
+
+            <label for="sprzęt">Ile razy w tygodniu możesz być na warsztatach?</label><br>
+            <input type="number" id="sprzęt" name="sprzęt">
+            <br><br>
+
+            <input type="submit" value="Wyślij">
+        </form>
+    </body>
+</html>
